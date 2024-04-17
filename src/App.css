@@ -1,38 +1,113 @@
+/* reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  width: 100%;
+  max-width: 100%;
+}
+button {
+  cursor: pointer;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+ul {
+  list-style: none;
+}
+
+/* 시작 */
 .App {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* header */
+.black-nav {
+  width: 100%;
+  height: 60px;
+  background-color: #000;
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 150px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo a {
+  font-size: 1.3rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* main */
+main {
+  width: 100%;
+  padding: 10px;
+}
+.content-title {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #555;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* post */
+.post {
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.post .post-top {
+  width: 100%;
+  margin-bottom: 5px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.post .post-top > * {
+  margin-right: 10px;
+}
+.like-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  margin-right: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.post-bottom {
+  font-size: 0.85rem;
+  color: #555;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.post-modal {
+  width: 100%;
+  padding: 20px;
+  background-color: #eee;
 }
+.modal-title {
+  text-align: center;
+  font-size: 1.2rem;
+}
+.modal-content {
+  padding-top: 10px;
+}
+.modal-date {
+  font-size: 0.9rem;
+  float: right;
+}
+.clear::after {
+  content: "";
+  display: block;
+  clear: both;
+  float: none;
+}
+.modal-detail {
+  line-height: 1.5rem;
+}
+
+/* footer */
